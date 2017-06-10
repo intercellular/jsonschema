@@ -1,0 +1,70 @@
+/** Grid **/
+html,body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+body: {
+  display: flex;
+  flex-direction: column;
+}
+body > .layout {
+  width: 100%;
+  height: 100%;
+}
+.layout {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+.horizontal {
+  height: 100%;
+  flex-direction: row;
+}
+.vertical {
+  width: 100%;
+  flex-direction: column;
+}
+.layout > :not([style*="display: none"]) {
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/** app specific **/
+.CodeMirror{
+  border-right: 2px solid rgba(0,0,0,0.04) !important;
+  height: 100%;
+}
+.col{
+  position: relative;
+  height: 100%;
+}
+#console{
+  font-family: Menlo, monaco;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  height: 100%;
+}
+span.label{
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding: 5px 10px;
+  background: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  font-family: HelveticaNeue, helvetica, arial;
+  font-size :12px;
+  color: rgba(255,255,255,0.8);
+  z-index: 1;
+  border-top-left-radius: 5px;
+}

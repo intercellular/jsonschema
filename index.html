@@ -1,0 +1,43 @@
+<html>
+<title>JSON Schema Validator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ajv -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ajv/5.1.5/ajv.min.js"></script>
+
+<!-- codemirror -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/codemirror.css" rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/theme/neo.css' rel='stylesheet'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/codemirror.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jsonlint/1.6.0/jsonlint.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/addon/lint/lint.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/addon/lint/javascript-lint.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/addon/lint/json-lint.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/addon/edit/closebrackets.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/addon/edit/matchbrackets.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/javascript/javascript.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/codemirror.css" rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/theme/neo.css' rel='stylesheet'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.26.0/mode/javascript/javascript.js"></script> 
+
+<!-- cell -->
+<script src="https://www.celljs.org/cell.js"></script>
+
+<!-- this app -->
+<link href="./style.css" rel="stylesheet">
+<script src="./editor.js"></script>
+<script src="./label.js"></script>
+<script src="./log.js"></script>
+<script src="./app.js"></script>
+<script>
+var app = App({
+  schema: {
+    url: "/example/schema.json"
+  },
+  data: {
+    url: "/example/data.json"
+  }
+});
+</script>
+</html>
