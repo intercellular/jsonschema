@@ -3,7 +3,8 @@
   "type": "object",
   "properties": {
     "firstName": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "lastName": {
       "type": "string"

@@ -27,6 +27,7 @@ App = function(options){
             value: (options && options.schema && options.schema.value) ? JSON.stringify(options.schema.value, null, 2) : null,
             _afterInit: function(){ this._update(this.value) },
             _update: function(content){
+              this.value = content;
               this._schema = JSON.parse(content);
               this._run()
             }
@@ -42,6 +43,7 @@ App = function(options){
             value: (options && options.data && options.data.value) ? JSON.stringify(options.data.value, null, 2) : "{}",
             _afterInit: function(){ this._update(this.value) },
             _update: function(content){
+              this.value = content;
               try { this._data = JSON.parse(content); } catch (e) { }
               this._run(); 
             }
