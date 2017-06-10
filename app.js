@@ -38,7 +38,7 @@ App = function(options){
         $components: [
           label("Data"),
           cm({
-            _url: (options && options.data && options.data.url) ? options.schema.url : null,
+            _url: (options && options.data && options.data.url) ? options.data.url : null,
             value: (options && options.data && options.data.value) ? JSON.stringify(options.data.value, null, 2) : "{}",
             _afterInit: function(){ this._update(this.value) },
             _update: function(content){
