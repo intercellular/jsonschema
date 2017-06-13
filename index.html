@@ -20,6 +20,9 @@
 <!-- cell -->
 <script src="https://www.celljs.org/cell.js"></script>
 
+<!-- fork me banner -->
+<script src="https://intercellular.github.io/forkme/forkme.js"></script>
+
 <!-- this app -->
 <link href="./style.css" rel="stylesheet">
 <script src="./editor.js"></script>
@@ -35,5 +38,9 @@ var app = App({
     url: "./example/data.json"
   }
 });
+var f = {
+  $cell: true,
+  $components: [ ForkMe("https://github.com/intercellular/jsonschema") ]
+}
 </script>
 </html>
